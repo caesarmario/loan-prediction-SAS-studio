@@ -137,8 +137,7 @@ Imputation Training -->
 ## 🙌 Support me!
 
 👉 If you find this project useful, **please ⭐ this repository 😆**!
-👉 Check out my works on Kaggle [here](https://www.kaggle.com/caesarmario/86-eligibility-prediction-w-various-ml-models/notebook) using similar data set with **86% accuracy**!
-
+### 🎈 Check out my works on Kaggle [here](https://www.kaggle.com/caesarmario/86-eligibility-prediction-w-various-ml-models/notebook) using similar data set with **86% accuracy**!
 ---
 
 👉 _More about myself: <a href="https://linktr.ee/caesarmario_"> here </a>_
