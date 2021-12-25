@@ -18,6 +18,14 @@
   - [About Project](#-about-project)
   - [Objectives](#-objectives)
   - [Data Set Description](#-data-set-description)
+  - [EDA](#-eda)
+      - [Data Sets Structure](#-data-sets-structure)
+      - [Training Data Set](#-training-data-set)
+          - [Univariate](#-univariate---training)
+          - [Bivariate](#-bivariate---training)
+      - [Testing Data Set](#-testing-data-set)
+          - [Univariate](#-univariate---testing)
+          - [Bivariate](#-bivariate---testing)
 <br>
 
 ## 🖋 About Project:
@@ -42,9 +50,9 @@
 <table style="width:100%">
 <thead>
 <tr>
-  <th style="text-align:center; font-weight: bold; font-size:14px"><b>Variable Name</b></th>
-  <th style="text-align:center; font-weight: bold; font-size:14px"><b>Description</b></th>
-  <th style="text-align:center; font-weight: bold; font-size:14px"><b>Sample Data</b></th>
+  <th style="text-align:center; font-weight: bold; font-size:14px">Variable Name</th>
+  <th style="text-align:center; font-weight: bold; font-size:14px">Description</th>
+  <th style="text-align:center; font-weight: bold; font-size:14px">Sample Data</th>
 </tr>
 </thead>
 <tbody>
@@ -169,7 +177,7 @@
 *   Loan Amount - Loan Duration <br>
 ![Loan Amount - Loan Duration](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Training/Bivariate/Training_Bivariate_LoanAmount_LoanDuration.png)<br><br>
 
-### 🛠 Testing Data Set
+### ⚒ Testing Data Set
 #### ▶ Univariate - Testing:
 *   Gender <br>
 ![Gender](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Univariate/Testing_Univariate_Gender.png)<br><br>
@@ -195,24 +203,98 @@
 ![Loan Duration](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Univariate/Testing_Univariate_LoanDuration.png)<br><br>
 
 #### ▶ Bivariate - Testing:
-*   [Loan Duration](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Training/Univariate/Training_Univariate_Gender.png)
+*   Gender - Marital Status <br>
+![Gender - Marital Status](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Bivariate/Testing_Bivariate_Gender_MaritalStatus.png)<br><br>
+*   Family Members - Qualification <br>
+![Family Members - Qualification](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Bivariate/Testing_Bivariate_FamilyMembers_Qualification.png)<br><br>
+*   Employment - Loan History <br>
+![Employment - Loan History](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Bivariate/Testing_Bivariate_Employment_LoanHistory.png)<br><br>
+*   Gender - Qualification <br>
+![Gender - Qualification](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Bivariate/Testing_Bivariate_Gender_Qualification.png)<br><br>
+*   Gender - Loan Location <br>
+![Gender - Loan Location](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Bivariate/Testing_Bivariate_Gender_LoanLocation.png)<br><br>
+*   Family Members - Loan Location<br>
+![Family Members - Loan Location](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Bivariate/Testing_Bivariate_FamilyMembers_LoanLocation.png)<br><br>
+*   Gender - Candidate Income <br>
+![Gender - Candidate Income](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Bivariate/Testing_Bivariate_Gender_CandidateIncome.png)<br><br>
+*   Marital Status - Guarantee Income <br>
+![Marital Status - Guarantee Income](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Bivariate/Testing_Bivariate_MaritalStatus_GuaranteeIncome.png)<br><br>
+*   Employment - Loan Amount <br>
+![Employment - Loan Amount](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Bivariate/Testing_Bivariate_Employment_LoanAmount.png)<br><br>
+*   Candidate Income - Guarantee Income <br>
+![Candidate Income - Guarantee Income](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Bivariate/Testing_Bivariate_CandidateIncome_GuaranteeIncome.png)<br><br>
+*   Loan Amount - Loan Duration <br>
+![Loan Amount - Loan Duration](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Bivariate/Testing_Bivariate_LoanAmount_LoanDuration.png)<br><br>
+*   Candidate Income - Loan Duration <br>
+![Candidate Income - Loan Duration](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Bivariate/Testing_Bivariate_CandidateIncome_LoanDuration.png)<br><br>
 
 
+## 🛠 Data Imputation:
+👉 The data imputation will be described as follows: <br>
+<table>
+<thead>
+  <tr>
+    <th rowspan="7"><b>Training</b></th>
+    <th rowspan="5"><i>Mode</i></th>
+    <th>Gender</th>
+  </tr>
+  <tr>
+    <th>Family Members</th>
+  </tr>
+  <tr>
+    <th>Marital Status</th>
+  </tr>
+  <tr>
+    <th>Employment</th>
+  </tr>
+  <tr>
+    <th>Loan History</th>
+  </tr>
+  <tr>
+    <th rowspan="2"><i>Mean</i></th>
+    <th>Loan Amount</th>
+  </tr>
+  <tr>
+    <th>Loan Duration</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td rowspan="6"><b>Testing</b></td>
+    <td rowspan="4"><i>Mode</i></td>
+    <td>Gender</td>
+  </tr>
+  <tr>
+    <td>Family Members</td>
+  </tr>
+  <tr>
+    <td>Employment</td>
+  </tr>
+  <tr>
+    <td>Loan History</td>
+  </tr>
+  <tr>
+    <td rowspan="2"><i>Mean</i></td>
+    <td>Loan Amount</td>
+  </tr>
+  <tr>
+    <td>Loan Duration</td>
+  </tr>
+</tbody>
+</table>
 
-<!--
-Univariate - Categorical
-Univariate - Continuous
+## 👨‍💻 Logistic Regression Result:
+### ▶ Summary of Logistic Regression:
+![LR - 1](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Logistic%20Regression%20Output%20-%201.png)<br>
+![LR - 2](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Logistic%20Regression%20Output%20-%202.png)<br>
+![LR - 3](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Logistic%20Regression%20Output%20-%203.png)<br>
+![LR - 4](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Logistic%20Regression%20Output%20-%204.png)<br>
 
-Bivariate - Categorical / Categorical
-Bivariate - Categorical / Continuous
-Bivariate - Continuous / Continuous
+### ▶ Logistic Regression Model Output:
+![LR Model Output](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Logistic%20Regression%20Model%20Output.png)<br>
 
-Imputation Training -->
-
-<!-- Univariate ;
-
-<!-- ![](https://raw.githubusercontent.com/caesarmario/simple-online-banking-system/main/Screenshot/3.4_Customer%20View.png) -->
-
+### ⚠ Prediction Output:
+![Prediction Output](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Prediction%20Output.png)<br>
 
 ## 🙌 Support me!
 
