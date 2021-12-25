@@ -26,7 +26,11 @@
       - [Testing Data Set](#-testing-data-set)
           - [Univariate](#-univariate---testing)
           - [Bivariate](#-bivariate---testing)
-<br>
+  - [Data Imputation](#-data-imputation)
+  - [Logistic Regression Result](#-logistic-regression-result)
+      - [Logistic Regression Summary](#-summary-of-logistic-regression)
+      - [Model Output](#-logistic-regression-model-output)
+      - [Prediction Output](#-prediction-output)
 
 ## 🖋 About Project:
 👉 Lasiandra Finance Inc. (LFI) New York, USA is a leading private financing company which caters the funding needs of Small and Medium enterprises (SME). LFI clearly understood that some business dreams need that extra push to see them accelerated. Hence it allows its loaning process as tailor-made and customer centric. In the past few years, it has tremendously expanded its wings and to speed up the process, it needs to automate the loan eligibility process based on customer portfolio entered online. <br><br>
@@ -228,7 +232,6 @@
 *   Candidate Income - Loan Duration <br>
 ![Candidate Income - Loan Duration](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Bivariate/Testing_Bivariate_CandidateIncome_LoanDuration.png)<br><br>
 
-
 ## 🛠 Data Imputation:
 👉 The data imputation will be described as follows: <br>
 <table>
@@ -282,6 +285,7 @@
   </tr>
 </tbody>
 </table>
+<br><br>
 
 ## 👨‍💻 Logistic Regression Result:
 ### ▶ Summary of Logistic Regression:
@@ -295,6 +299,7 @@
 
 ### ⚠ Prediction Output:
 ![Prediction Output](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Prediction%20Output.png)<br>
+<br><br>
 
 ## 🙌 Support me!
 
