@@ -317,87 +317,209 @@
     - The percentage of female applicants with approved loan applications is 18.12%. The percentage of female applicants with rejected loan applications is 19.79%
     - There are 13 missing values, with 13 missing values in the gender variable and none in loan approval status.
 <br><br>
-!!!!!!!!!!!!
-*   LOAN_APPROVAL_STATUS - Candidate Income <br>
-![LOAN_APPROVAL_STATUS - Candidate Income](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Training/Bivariate/Training_Bivariate_LoanApprovalStatus_CandidateIncome.png)<br>
-    - It can be seen that **there are 14 missing values**.
-    - Both the histogram, mean and median values indicate that the data distribution for this variable is positively skewed, with the median 360 and mean 342
+
+*   LOAN_APPROVAL_STATUS - CANDIDATE_INCOME <br>
+![LOAN_APPROVAL_STATUS - CANDIDATE_INCOME](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Training/Bivariate/Training_Bivariate_LoanApprovalStatus_CandidateIncome.png)<br>
+    - It can be seen from the box plot that there are lots of outliers in candidate income.
+    - For both box plots, it can be seen that the distribution is positively skewed because the median value is closer to the lower quartile.
+    - The table shows that both maximum values for approved and rejected loan applications are more significant than the mean value, indicating extreme outliers in the dataset.
 <br><br>
 
-*   LOAN_APPROVAL_STATUS - Guarantee Income <br>
-![LOAN_APPROVAL_STATUS - Guarantee Income](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Training/Bivariate/Training_Bivariate_LoanApprovalStatus_GuaranteeIncome.png)<br>
-    - It can be seen that **there are 14 missing values**.
-    - Both the histogram, mean and median values indicate that the data distribution for this variable is positively skewed, with the median 360 and mean 342
+*   LOAN_APPROVAL_STATUS - GUARANTEE_INCOME <br>
+![LOAN_APPROVAL_STATUS - GUARANTEE_INCOME](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Training/Bivariate/Training_Bivariate_LoanApprovalStatus_GuaranteeIncome.png)<br>
+    - It can be seen from the box plot that there are lots of outliers in guarantee income
+    - For rejected loan applications box plots, it can be seen that the distribution is positively skewed because the median value is closer to the lower quartile.
+    - For the approved loan applications box plot, it can be seen that the distribution is slightly negatively skewed because the median value is slightly closer to the top quartile.
+    - Both maximum values for approved and rejected loan applications are more significant than the mean value, indicating extreme outliers in the dataset
 <br><br>
 
-*   Loan Approval Status - Loan Amount <br>
-![Loan Approval Status - Loan Amount](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Training/Bivariate/Training_Bivariate_LoanApprovalStatus_LoanAmount.png)<br>
-    - It can be seen that **there are 14 missing values**.
-    - Both the histogram, mean and median values indicate that the data distribution for this variable is positively skewed, with the median 360 and mean 342
+*   LOAN_APPROVAL_STATUS - LOAN_AMOUNT <br>
+![LOAN_APPROVAL_STATUS - LOAN_AMOUNT](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Training/Bivariate/Training_Bivariate_LoanApprovalStatus_LoanAmount.png)<br>
+    - It can be seen from the box plot that there are lots of outliers in the loan amount.
+    - For both loan applications box plots, it can be seen that the distribution is slightly positively skewed because the median value is slightly closer to the lower quartile.
+    - The table shows that both maximum values for approved and rejected loan applications are more significant than the mean value, indicating extreme outliers in the dataset.
 <br><br>
 
-*   Candidate Income - Guarantee Income <br>
-![Candidate Income - Guarantee Income](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Training/Bivariate/Training_Bivariate_CandidateIncome_GuaranteeIncome.png)<br>
-    - It can be seen that **there are 14 missing values**.
-    - Both the histogram, mean and median values indicate that the data distribution for this variable is positively skewed, with the median 360 and mean 342
+*   CANDIDATE_INCOME - GUARANTEE_INCOME <br>
+![CANDIDATE_INCOME - GUARANTEE_INCOME](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Training/Bivariate/Training_Bivariate_CandidateIncome_GuaranteeIncome.png)<br>
+    - It can be seen that from the tables and scatter plot that there is a negative correlation with -0.11660.
+    - The correlation coefficient is significant at the 95 per cent confidence interval, as it has a p-value of 0.0038, indicating that it holds for the whole population.
 <br><br>
 
-*   Loan Amount - Loan Duration <br>
-![Loan Amount - Loan Duration](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Training/Bivariate/Training_Bivariate_LoanAmount_LoanDuration.png)<br>
-    - It can be seen that **there are 14 missing values**.
-    - Both the histogram, mean and median values indicate that the data distribution for this variable is positively skewed, with the median 360 and mean 342
+*   LOAN_AMOUNT - LOAN_DURATION <br>
+![LOAN_AMOUNT - LOAN_DURATION](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Training/Bivariate/Training_Bivariate_LoanAmount_LoanDuration.png)<br>
+    - It can be seen that from the tables and scatter plot that there is a positive correlation between candidate income and guarantee income 0.03945.
+    - This correlation coefficient between loan amount and loan duration is not significant at the 95 per cent confidence interval (p-value = 0.3438).
 <br><br>
 
 ### ⚒ Testing Data Set
 #### ▶ Univariate - Testing:
-*   Gender <br>
-![Gender](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Univariate/Testing_Univariate_Gender.png)<br><br>
-*   Marital Status <br>
-![Marital Status](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Univariate/Testing_Univariate_MaritalStatus.png)<br><br>
-*   Family Members <br>
-![Family Members](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Univariate/Testing_Univariate_FamilyMembers.png)<br><br>
-*   Qualification <br>
-![Qualification](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Univariate/Testing_Univariate_Qualification.png)<br><br>
-*   Employment <br>
-![Employment](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Univariate/Testing_Univariate_Employment.png)<br><br>
-*   Loan History <br>
-![Loan History](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Univariate/Testing_Univariate_LoanHistory.png)<br><br>
-*   Loan Location <br>
-![Loan Location](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Univariate/Testing_Univariate_LoanLocation.png)<br><br>
-*   Candidate Income <br>
-![Candidate Income](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Univariate/Testing_Univariate_CandidateIncome.png)<br><br>
-*   Guarantee Income <br>
-![Guarantee Income](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Univariate/Testing_Univariate_GuaranteeIncome.png)<br><br>
-*   Loan Amount <br>
-![Loan Amount](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Univariate/Testing_Univariate_LoanAmount.png)<br><br>
-*   Loan Duration <br>
-![Loan Duration](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Univariate/Testing_Univariate_LoanDuration.png)<br><br>
+*   GENDER <br>
+![GENDER](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Univariate/Testing_Univariate_Gender.png)<br>
+    - **11 LFI customers had an unidentified gender** due to missing values in the dataset.
+    - The dataset has an **uneven distribution between male and female loan applicants**, with the percentage of male applicants is 80.34% (286 male applicants) and the percentage of female applicants is only 19.66% (70 female applicants).
+<br><br>
+
+*   MARITAL_STATUS <br>
+![MARITAL_STATUS](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Univariate/Testing_Univariate_MaritalStatus.png)<br>
+    - There are no missing values.
+    - The dataset has an uneven distribution between married and not married loan applicants, with the percentage of married applicants is 63.49% (233 married applicants) and the percentage of not married applicants is only 36.51% (134 not married applicants).
+<br><br>
+
+*   FAMILY_MEMBERS <br>
+![FAMILY_MEMBERS](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Univariate/Testing_Univariate_FamilyMembers.png)<br>
+    - **10 loan applicants in the testing dataset had an unidentified number of family members** due to missing values.
+    - As many as 56.02% (200 applicants) have 0 family members, 16.25% (58 applicants) have one family member, 16.53% (59 applicants) have two family members, and 11.20% (40 applicants) have three or more family members.
+<br><br>
+
+*   QUALIFICATION <br>
+![QUALIFICATION](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Univariate/Testing_Univariate_Qualification.png)<br>
+    - **There are no missing values or no applicants with unidentified qualifications** in the dataset.
+    - The dataset has an uneven distribution between graduated and under graduated applicants, with the percentage of graduated applicants is 77.11% (283 graduated applicants).
+    - The percentage of under graduated applicants is only 22.89% (84 under graduated applicants).
+<br><br>
+
+*   EMPLOYMENT <br>
+![EMPLOYMENT](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Univariate/Testing_Univariate_Employment.png)<br>
+    - **23 loan applicants in the training dataset had an unknown employment status** due to missing values.
+    - The dataset has an uneven distribution between yes (employed) and no (unemployed) loan applicants, with the percentage of no (unemployed) applicants is 89.24% (307 unemployed applicants) while the percentage of not yes (employed) applicants is only 10.76% (37 employed applicants).
+<br><br>
+
+*   LOAN_HISTORY <br>
+![LOAN_HISTORY](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Univariate/Testing_Univariate_LoanHistory.png)<br>
+    - **29 loan applicants in the training dataset had an unidentified history of loan applicants** due to missing values.
+    - The dataset has an uneven distribution between an applicant that has good loan history (1) and an applicant that has bad loan history (0), with the percentage of applicants that have bad loan history (0) is only 17.46% (59 applicants).
+    - The percentage of applicants with good loan history (1) is 82.54% (279 applicants).
+<br><br>
+
+*   LOAN_LOCATION <br>
+![LOAN_LOCATION](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Univariate/Testing_Univariate_LoanLocation.png)<br>
+    - There are no missing values or applicants with unidentified loan locations in the dataset.
+    - As many as 38.15% (140 applicants) live in the city, 31.61% (116 applicants) live in the town, and 30.25% (111 applicants) live in the village.
+<br><br>
+
+*   CANDIDATE_INCOME <br>
+![CANDIDATE_INCOME](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Univariate/Testing_Univariate_CandidateIncome.png)<br>
+    - It can be seen that there are no missing values or no applicants that had unidentified income in the dataset
+    - Both the histogram, mean and median values indicate that the data distribution for this variable is positively skewed, with the median 3,786 and mean 4,805.6.
+<br><br>
+
+*   GUARANTEE_INCOME <br>
+![GUARANTEE_INCOME](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Univariate/Testing_Univariate_GuaranteeIncome.png)<br>
+    - It can be seen that there are no missing values or no applicants that had unidentified guarantee income in the dataset.
+    - Both the histogram, mean and median values indicate that the data distribution for this variable is positively skewed, with the median 1025 and mean 1569.58.
+<br><br>
+
+*   LOAN_AMOUNT <br>
+![LOAN_AMOUNT](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Univariate/Testing_Univariate_LoanAmount.png)<br>
+    - It can be seen that there are five missing values.
+    - Both the histogram, mean and median values indicate that the data distribution for this variable is positively skewed, with the median 125 and mean 136.1325967.
+<br><br>
+
+*   LOAN_DURATION <br>
+![LOAN_DURATION](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Univariate/Testing_Univariate_LoanDuration.png)<br>
+    - It can be seen that there are six missing values.
+    - Both the histogram, mean and median values indicate that the data distribution for this variable is positively skewed, with the median 360 and mean 342.5373961.
+<br><br>
+
 
 #### ▶ Bivariate - Testing:
-*   Gender - Marital Status <br>
-![Gender - Marital Status](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Bivariate/Testing_Bivariate_Gender_MaritalStatus.png)<br><br>
-*   Family Members - Qualification <br>
-![Family Members - Qualification](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Bivariate/Testing_Bivariate_FamilyMembers_Qualification.png)<br><br>
-*   Employment - Loan History <br>
-![Employment - Loan History](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Bivariate/Testing_Bivariate_Employment_LoanHistory.png)<br><br>
-*   Gender - Qualification <br>
-![Gender - Qualification](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Bivariate/Testing_Bivariate_Gender_Qualification.png)<br><br>
-*   Gender - Loan Location <br>
-![Gender - Loan Location](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Bivariate/Testing_Bivariate_Gender_LoanLocation.png)<br><br>
-*   Family Members - Loan Location<br>
-![Family Members - Loan Location](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Bivariate/Testing_Bivariate_FamilyMembers_LoanLocation.png)<br><br>
-*   Gender - Candidate Income <br>
-![Gender - Candidate Income](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Bivariate/Testing_Bivariate_Gender_CandidateIncome.png)<br><br>
-*   Marital Status - Guarantee Income <br>
-![Marital Status - Guarantee Income](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Bivariate/Testing_Bivariate_MaritalStatus_GuaranteeIncome.png)<br><br>
-*   Employment - Loan Amount <br>
-![Employment - Loan Amount](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Bivariate/Testing_Bivariate_Employment_LoanAmount.png)<br><br>
-*   Candidate Income - Guarantee Income <br>
-![Candidate Income - Guarantee Income](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Bivariate/Testing_Bivariate_CandidateIncome_GuaranteeIncome.png)<br><br>
-*   Loan Amount - Loan Duration <br>
-![Loan Amount - Loan Duration](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Bivariate/Testing_Bivariate_LoanAmount_LoanDuration.png)<br><br>
-*   Candidate Income - Loan Duration <br>
-![Candidate Income - Loan Duration](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Bivariate/Testing_Bivariate_CandidateIncome_LoanDuration.png)<br><br>
+*   GENDER - MARITAL_STATUS <br>
+![GENDER - MARITAL_STATUS](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Bivariate/Testing_Bivariate_Gender_MaritalStatus.png)<br>
+    - It can be seen that in both the frequency table and the mosaic plot, the majority of male applicants are already married (88.70%), while the majority of female applicants are not yet married (34.92%).
+    - The percentage of female applicants who are already married is only 11.30%, while the percentage of male applicants who are not yet married is 65.08%.
+    - There are 11 missing data due to 11 missing values for gender
+<br><br>
+
+*   FAMILY_MEMBERS - QUALIFICATION <br>
+![FAMILY_MEMBERS - QUALIFICATION](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Bivariate/Testing_Bivariate_FamilyMembers_Qualification.png)<br>
+    - It can be seen that the majority of loan applicants who are graduates do not have any family members (58.39%).
+    - Most loan applicants who are undergraduates do not have any family members (48.19%).
+    - Graduates with one family member are 17.15%, while undergraduates with one family member are 13.25%.
+    - The percentage of graduates with two family members is 14.96%, while undergraduates with two family members are 21.69%.
+    - The percentage of graduates with three or more family members is 9.49%, while undergraduates with three or more family members are 16.87%.
+    - There are ten missing values, since there are ten missing data for family members, but no missing value for qualification.
+<br><br>
+
+*   EMPLOYMENT - LOAN_HISTORY <br>
+![EMPLOYMENT - LOAN_HISTORY](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Bivariate/Testing_Bivariate_Employment_LoanHistory.png)<br>
+    - It can be seen that 87.59% of unemployed loan applicants have good loan history. The loan applicants who are also unemployed have a bad loan history with 96%.
+    - It can be seen that the percentage of applicants that are employed and have bad loan history is 4%, and the percentage of applicants that are employed and have good loan history is 12.41%.
+    - There are 51 missing values because there are 23 missing values in employment and 28 missing values in loan history.
+<br><br>
+
+*   GENDER - QUALIFICATION <br>
+![GENDER - QUALIFICATION](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Bivariate/Testing_Bivariate_Gender_Qualification.png)<br>
+    - It can be seen that most male undergraduate loan applicants are higher than graduate male loan applicants.
+    - Undergraduate males have a percentage of 82.50%, while male graduates have a percentage of 79.71%.
+    - Graduate women have a percentage of 20.29%, while undergraduate women have a percentage of 17.50%.
+    - It can be seen that there are 11 missing values from the gender variable and 0 missing values in the qualification variable.
+<br><br>
+
+*   GENDER - LOAN_LOCATION <br>
+![GENDER - LOAN_LOCATION](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Bivariate/Testing_Bivariate_Gender_LoanLocation.png)<br>
+    - It can be seen that most male applicants come from the village with a percentage of 83.33%.
+    - Male applicants come from the city, only 81.75% and male applicants come from town are 75.68%.
+    - The majority of female applicants come from a town with a percentage of 24.32%.
+    - Female applicants from the city are only 18.25%, female applicants from the village are only 16.67%.
+    - There are 11 missing values, with 11 missing values in the gender variable and none in loan approval status.
+<br><br>
+
+*   FAMILY_MEMBERS - LOAN_LOCATION<br>
+![FAMILY_MEMBERS - LOAN_LOCATION](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Bivariate/Testing_Bivariate_FamilyMembers_LoanLocation.png)<br>
+    - It can be seen that the majority of applicants who do not have family members come from villages with a percentage of 57.27%.
+    - Applicants who do not have family members from the town have 55.86%, and those from the city have a percentage of 55.15%.
+    - Applicants who have one family members majority come from a town with a percentage of 18.02%.
+    - Applicants with one family member from the village have a percentage of 16.36%, and those from the city have 14.71%.
+    - Applicants who have two family members majority come from villages with a percentage of 20%.
+    - Applicants with two family members from the city have a percentage of 16.16%, and those from the city have 13.51%.
+    - Applicants who have three or more family members majority come from cities with a percentage of 13.97%.
+    - Applicants with three or more family members from the town have a percentage of 12.61%, and those from villages have a percentage of 6.36%.
+    - There are ten missing values with ten missing values in the family members variable and none in loan location.
+<br><br>
+
+*   GENDER - CANDIDATE_INCOME <br>
+![GENDER - CANDIDATE_INCOME](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Bivariate/Testing_Bivariate_Gender_CandidateIncome.png)<br>
+    - It can be seen from the box plot that there are lots of outliers in candidate income.
+    - It can be seen that candidate income for male are much higher (mean = 4932.86) compare to female (mean = 4163.60).
+    - For both box plots, it can be seen that the distribution is positively skewed because the median value is closer to the lower quartile.
+    - Both maximum values for female and male applicants are more significant than the mean value, indicating extreme outliers in the dataset.
+<br><br>
+
+*   MARITAL_STATUS - GUARANTEE_INCOME <br>
+![MARITAL_STATUS - GUARANTEE_INCOME](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Bivariate/Testing_Bivariate_MaritalStatus_GuaranteeIncome.png)<br>
+    - It can be seen from the box plot that there are lots of outliers in guarantee income.
+    - The guaranteed income is higher for married applicants (mean = 1627.12) than unmarried applicants (mean = 1459.53).
+    - For not married applicants box plots, it can be seen that the distribution is positively skewed because the median value is closer to the lower quartile.
+    - For the married applicant's box plot, it can be seen that the distribution is slightly negatively skewed because the median value is slightly closer to the top quartile.
+    - Both maximum values for married and unmarried applicants are more significant than the mean value, indicating extreme outliers in the dataset.
+<br><br>
+
+*   EMPLOYMENT - LOAN_AMOUNT <br>
+![EMPLOYMENT - LOAN_AMOUNT](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Bivariate/Testing_Bivariate_Employment_LoanAmount.png)<br>
+    - It can be seen from the box plot that there are lots of outliers in the loan amount.
+    - The loan amount is more significant for employed applicants (mean = 150.1891892) than for unemployed applicants (mean = 133.7218543).
+    - It can be seen that the distribution is slightly positively skewed because the median value is slightly closer to the lower quartile.
+    - Both maximum values for employed and unemployed applicants are more significant than the mean value, indicating extreme outliers in the dataset.
+<br><br>
+
+*   CANDIDATE_INCOME - GUARANTEE_INCOME <br>
+![CANDIDATE_INCOME - GUARANTEE_INCOME](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Bivariate/Testing_Bivariate_CandidateIncome_GuaranteeIncome.png)<br>
+    - It can be seen that from the tables and scatter plot that there is a negative correlation between candidate income and guarantee income with -0.11033.
+    - This correlation coefficient is significant at the 95 per cent confidence interval, as it has a p-value of 0.0346.
+<br><br>
+
+*   LOAN_AMOUNT - LOAN_DURATION <br>
+![LOAN_AMOUNT - LOAN_DURATION](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Bivariate/Testing_Bivariate_LoanAmount_LoanDuration.png)<br>
+    - It can be seen that from the tables and scatter plot that there is a positive correlation between candidate income and guarantee income 0.09495.
+    - The correlation coefficient is not significant at the 95 per cent confidence interval, with a p-value of 0.0736.
+<br><br>
+
+*   CANDIDATE_INCOME - LOAN_DURATION <br>
+![CANDIDATE_INCOME - LOAN_DURATION](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Testing/Bivariate/Testing_Bivariate_CandidateIncome_LoanDuration.png)<br>
+    - It can be seen that from the tables and scatter plot that there is a positive correlation between candidate income and loan duration 0.02325.
+    - The correlation coefficient is not significant at the 95 per cent confidence interval, with a p-value of 0.6598.
+<br><br>
 
 ## 🛠 Data Imputation:
 👉 The data imputation will be described as follows: <br>
@@ -451,21 +573,37 @@
     <td>Loan Duration</td>
   </tr>
 </tbody>
-</table>
+</table><br>
+
+👉 Summary: all the **categorical variables** will be imputed using **mode**, while all the **continuous variables** will be imputed using **mean**.
 <br><br>
 
 ## 👨‍💻 Logistic Regression Result:
 ### ▶ Summary of Logistic Regression:
 ![LR - 1](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Logistic%20Regression%20Output%20-%201.png)<br>
+    👉 The dataset on which the model was built has been correctly cleaned. <br>
+    👉 There are no more missing values (the number of observations reads and used is the same enabling the model to use every observation in the dataset). <br>
+    👉 The response profile reveals a highly unbalanced percentage between the two classes within the dependent variable, loan approval status, with a ratio of about 1:2 between N and Y. <br>
 ![LR - 2](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Logistic%20Regression%20Output%20-%202.png)<br>
+    👉 The Convergence Status of the Model is “Satisfied,” and the AIC value is smaller than SC. <br>
+    👉 These two examples demonstrate that the Logistic Regression Model is an effective predictor. <br>
 ![LR - 3](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Logistic%20Regression%20Output%20-%203.png)<br>
+    👉 It can be seen that marital status, loan history, and loan location has a significant correlation to loan approval status since the p-value is less than 0.05. <br>
 ![LR - 4](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Logistic%20Regression%20Output%20-%204.png)<br>
+    👉 The p-value column “Pr > ChiSq” indicates that not all variables in the model are significant. <br>
+    👉 A p-value of less than 0.05 indicates that the variable significantly affects loan approval status variation. <br>
+    👉 Loan location and marital status impact loan approval choices. <br>
+    👉 It can be observed that work status and gender have little impact on loan approval results. <br>
 
 ### ▶ Logistic Regression Model Output:
 ![LR Model Output](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Logistic%20Regression%20Model%20Output.png)<br>
-
+    👉 There are extra columns at the end of the dataset and the standard variables. <br>
+    👉 Each column contains an estimated result from the model together with the estimated probability. <br>
+    
 ### ⚠ Prediction Output:
 ![Prediction Output](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Prediction%20Output.png)<br>
+    👉 There is 1 new column showing the results of the status prediction output from the loan approval. <br>
+    👉 In addition, in addition to the new column that has been created, there is a probability of the loan application being rejected (N) and a probability of the loan application being accepted (Y).
 <br><br>
 
 ## 🙌 Support me!
