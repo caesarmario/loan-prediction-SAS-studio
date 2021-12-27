@@ -52,81 +52,138 @@
 <br>
 👉 The structure of the two data sets that have been given: <br><br>
 <table style="width:100%">
-<thead>
-<tr>
-  <th style="text-align:center; font-weight: bold; font-size:14px">Variable Name</th>
-  <th style="text-align:center; font-weight: bold; font-size:14px">Description</th>
-  <th style="text-align:center; font-weight: bold; font-size:14px">Sample Data</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><b>Loan_ID</b></td>
-<td>Loan reference number <br> (unique ID)</td>
-<td>LP001002; LP001003; ...</td>
-</tr>
-<tr>
-<td><b>Gender</b></td>
-<td>Applicant gender <br> (Male or Female)</td>
-<td>Male; Female</td>
-</tr>
-<tr>
-<td><b>Married</b></td>
-<td>Applicant marital status <br> (Married or not married)</td>
-<td>Married; Not Married</td>
-</tr>
-<tr>
-<td><b>Dependents</b></td>
-<td>Number of family members</td>
-<td>0; 1; 2; 3+</td>
-</tr>
-<tr>
-<td><b>Education</b></td>
-<td>Applicant education/qualification <br> (graduate or not graduate)</td>
-<td>Graduate; Under Graduate</td>
-</tr>
-<tr>
-<td><b>Self_Employed</b></td>
-<td>Applicant employment status <br> (yes for self-employed, no for employed/others)</td>
-<td>Yes; No</td>
-</tr>
-<tr>
-<td><b>ApplicantIncome</b></td>
-<td>Applicant's monthly salary/income</td>
-<td>5849; 4583; ...</td>
-</tr>
-<tr>
-<td><b>CoapplicantIncome</b></td>
-<td>Additional applicant's monthly salary/income</td>
-<td>1508; 2358; ...</td>
-</tr>
-<tr>
-<td><b>LoanAmount</b></td>
-<td>Loan amount</td>
-<td>128; 66; ...</td>
-</tr>
-<tr>
-<td><b>Loan_Amount_Term</b></td>
-<td>The loan's repayment period (in days)</td>
-<td>360; 120; ...</td>
-</tr>
-<tr>
-<td><b>Credit_History</b></td>
-<td>Records of previous credit history <br> (0: bad credit history, 1: good credit history)</td>
-<td>0; 1</td>
-</tr>
-<tr>
-<td><b>Property_Area</b></td>
-<td>The location of property <br> (Rural/Semiurban/Urban)</td>
-<td>Rural; Semiurban; Urban</td>
-</tr>
-<tr>
-<td><b>Loan_Status</b></td>
-<td>Status of loan <br> (Y: accepted, N: not accepted)</td>
-<td>Y; N</td>
-</tr>
+  <thead>
+    <tr>
+      <th style="text-align:center; font-weight: bold; font-size:14px">Variable Name</th>
+      <th style="text-align:center; font-weight: bold; font-size:14px">Description</th>
+      <th style="text-align:center; font-weight: bold; font-size:14px">Sample Data</th>
+      <th style="text-align:center; font-weight: bold; font-size:14px">Available in Data Set</th>
+      <th style="text-align:center; font-weight: bold; font-size:14px">Variabel Type</th>
+      <th style="text-align:center; font-weight: bold; font-size:14px">Data Type</th>
+      <th style="text-align:center; font-weight: bold; font-size:14px">Length</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>SME_LOAN_ID_NO</td>
+    <td>Loan reference number <br> (unique ID)</td>
+    <td>TRAINING_DS, TESTING_DS</td>
+    <td>Categorical</td>
+    <td>Char</td>
+    <td>8</td>
+    <td>LP001002; LP001003; …</td>
+  </tr>
+  <tr>
+    <td>GENDER</td>
+    <td>Applicant gender <br> (Male or Female)</td>
+    <td>TRAINING_DS, TESTING_DS</td>
+    <td>Categorical</td>
+    <td>Char</td>
+    <td>6</td>
+    <td>Male; Female</td>
+  </tr>
+  <tr>
+    <td>MARITAL_STATUS</td>
+    <td>Applicant marital status <br> (Married or not married)</td>
+    <td>TRAINING_DS, TESTING_DS</td>
+    <td>Categorical</td>
+    <td>Char</td>
+    <td>11</td>
+    <td>Married; Not Married</td>
+  </tr>
+  <tr>
+    <td>FAMILY_MEMBERS</td>
+    <td>Numberof family members owned by applicant</td>
+    <td>TRAINING_DS, TESTING_DS</td>
+    <td>Categorical</td>
+    <td>Char</td>
+    <td>2</td>
+    <td>0;1; 2; 3+</td>
+  </tr>
+  <tr>
+    <td>QUALIFICATION</td>
+    <td>Applicant qualification <br> (graduate or under graduate)</td>
+    <td>TRAINING_DS, TESTING_DS</td>
+    <td>Categorical</td>
+    <td>Char</td>
+    <td>14</td>
+    <td>Graduate; Under Graduate</td>
+  </tr>
+  <tr>
+    <td>EMPLOYMENT</td>
+    <td>Applicant employment status <br> (yes or no)</td>
+    <td>TRAINING_DS, TESTING_DS</td>
+    <td>Categorical</td>
+    <td>Char</td>
+    <td>3</td>
+    <td>Yes; No</td>
+  </tr>
+  <tr>
+    <td>CANDIDATE_INCOME</td>
+    <td>Applicant’s monthly salary/income</td>
+    <td>TRAINING_DS, TESTING_DS</td>
+    <td>Continuous</td>
+    <td>Numeric</td>
+    <td>8</td>
+    <td>5849; 4583; …</td>
+  </tr>
+  <tr>
+    <td>GUARANTEE_INCOME</td>
+    <td>Earnings of both applicants</td>
+    <td>TRAINING_DS, TESTING_DS</td>
+    <td>Continuous</td>
+    <td>Numeric</td>
+    <td>8</td>
+    <td>1508; 2358; …</td>
+  </tr>
+  <tr>
+    <td>LOAN_AMOUNT</td>
+    <td>Loan amount <br> (in thousands)</td>
+    <td>TRAINING_DS, TESTING_DS</td>
+    <td>Continuous</td>
+    <td>Numeric</td>
+    <td>8</td>
+    <td>128; 66; …</td>
+  </tr>
+  <tr>
+    <td>LOAN_DURATION</td>
+    <td>The loan’s repayment period</td>
+    <td>TRAINING_DS, TESTING_DS</td>
+    <td>Categorical</td>
+    <td>Numeric</td>
+    <td>8</td>
+    <td>360; 120; …</td>
+  </tr>
+  <tr>
+    <td>LOAN_HISTORY</td>
+    <td>Records of previous loans</td>
+    <td>TRAINING_DS, TESTING_DS</td>
+    <td>Categorical</td>
+    <td>Numeric</td>
+    <td>8</td>
+    <td>0; 1</td>
+  </tr>
+  <tr>
+    <td>LOAN_LOCATION</td>
+    <td>The location of loan (city/village/town)</td>
+    <td>TRAINING_DS, TESTING_DS</td>
+    <td>Categorical</td>
+    <td>Char</td>
+    <td>7</td>
+    <td>City; Village; Town</td>
+  </tr>
+  <tr>
+    <td>LOAN_APPROVAL_STATUS</td>
+    <td>Approval status of loan</td>
+    <td>TESTING_DS</td>
+    <td>Categorical</td>
+    <td>Char</td>
+    <td>1</td>
+    <td>Y; N</td>
+  </tr>
 </tbody>
 </table>
+
 
 ## 📊 EDA:
 ### 🏛 Data Sets Structure:
