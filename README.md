@@ -520,6 +520,8 @@
     - It can be seen that from the tables and scatter plot that there is a positive correlation between candidate income and loan duration 0.02325.
     - The correlation coefficient is not significant at the 95 per cent confidence interval, with a p-value of 0.6598.
 <br><br>
+[![](https://img.shields.io/badge/back%20to%20top-%E2%86%A9-blue)](#-table-of-contents)
+<br><br>
 
 ## 🛠 Data Imputation:
 👉 The data imputation will be described as follows: <br>
@@ -577,6 +579,8 @@
 
 👉 Summary: all the **categorical variables** will be imputed using **mode**, while all the **continuous variables** will be imputed using **mean**.
 <br><br>
+[![](https://img.shields.io/badge/back%20to%20top-%E2%86%A9-blue)](#-table-of-contents)
+<br><br>
 
 ## 👨‍💻 Logistic Regression Result:
 ### ▶ Summary of Logistic Regression:
@@ -604,6 +608,8 @@
 ![Prediction Output](https://github.com/caesarmario/loan-prediction-SAS-studio/blob/main/Screenshot/Prediction%20Output.png)<br>
     👉 There is 1 new column showing the results of the status prediction output from the loan approval. <br>
     👉 In addition, in addition to the new column that has been created, there is a probability of the loan application being rejected (N) and a probability of the loan application being accepted (Y).
+<br><br>
+[![](https://img.shields.io/badge/back%20to%20top-%E2%86%A9-blue)](#-table-of-contents)
 <br><br>
 
 ## 🙌 Support me!
