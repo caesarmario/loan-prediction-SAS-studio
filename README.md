@@ -8,8 +8,8 @@
   <a href="https://linktr.ee/caesarmario_">
     <img src="https://img.shields.io/badge/Follow%20My%20Other%20Works-019875?style=flat&labelColor=019875&link=https:/linktr.ee/caesarmario_" alt="Linktree"/>
   </a>
-  <a href="https://www.kaggle.com/caesarmario/86-eligibility-prediction-w-various-ml-models/notebook">
-    <img src="https://img.shields.io/badge/-Similar%20Works%20on%20Kaggle-teal?style=flat&logo=kaggle&logoColor=deepblue&link=https://www.kaggle.com/caesarmario/86-eligibility-prediction-w-various-ml-models/notebook" alt="Similar Works"/>
+  <a href="https://www.kaggle.com/caesarmario/91-eligibility-prediction-w-various-ml-models">
+    <img src="https://img.shields.io/badge/-Similar%20Works%20on%20Kaggle-teal?style=flat&logo=kaggle&logoColor=deepblue&link=https://www.kaggle.com/caesarmario/91-eligibility-prediction-w-various-ml-models" alt="Similar Works"/>
   </a>
 </p>
 <br>
@@ -615,7 +615,7 @@
 ## 🙌 Support me!
 
 👉 If you find this project useful, **please ⭐ this repository 😆**!
-### 🎈 Check out my works on Kaggle [here](https://www.kaggle.com/caesarmario/86-eligibility-prediction-w-various-ml-models/notebook) using similar data set with **86% accuracy**!
+### 🎈 Check out my works on Kaggle [here](https://www.kaggle.com/caesarmario/91-eligibility-prediction-w-various-ml-models) using similar data set with **91% accuracy**!
 ---
 
 👉 _More about myself: <a href="https://linktr.ee/caesarmario_"> here </a>_
