@@ -33,10 +33,9 @@
       - [Prediction Output](#-prediction-output)
 
 ## 🖋 About Project:
-👉 Lasiandra Finance Inc. (LFI) New York, USA is a leading private financing company which caters the funding needs of Small and Medium enterprises (SME). LFI clearly understood that some business dreams need that extra push to see them accelerated. Hence it allows its loaning process as tailor-made and customer centric. In the past few years, it has tremendously expanded its wings and to speed up the process, it needs to automate the loan eligibility process based on customer portfolio entered online. <br><br>
-👉 The main problem faced by the LFI is the approval process of the loans. Because it is a complicated procedure of verification and validation but still there is no guarantee whether the chosen applicant is the deserving one out of all applicants. **Hence, it needs a machine learning model which can predict the loan approval**. <br><br>
-👉 As data scientist in LFI, it is needed to **analyze the data set obtained from the past customer and build logistic regression model to predict the approval process**.
-<br><br>
+> Lasiandra Finance Inc. (LFI) New York, USA is a leading private financing company which caters the funding needs of Small and Medium enterprises (SME). LFI clearly understood that some business dreams need that extra push to see them accelerated. Hence it allows its loaning process as tailor-made and customer centric. In the past few years, it has tremendously expanded its wings and to speed up the process, it needs to automate the loan eligibility process based on customer portfolio entered online. <br><br>
+The main problem faced by the LFI is the approval process of the loans. Because it is a complicated procedure of verification and validation but still there is no guarantee whether the chosen applicant is the deserving one out of all applicants. **Hence, it needs a machine learning model which can predict the loan approval**. <br><br>
+As data scientist in LFI, it is needed to **analyze the data set obtained from the past customer and build logistic regression model to predict the approval process**.
 
 ## 📌 Objectives:
 *   Analyze customer data provided in data set (EDA)
