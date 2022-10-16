@@ -1,4 +1,4 @@
-<h1 align="center">💳 Loan Prediction Eligibilty - Lasiandra Finance Inc. 💳 </h1>
+<h1 align="center">💳 Loan Prediction Eligibility - Lasiandra Finance Inc. 💳 </h1>
 <p align="center">using <b>SAS Studio 🖥</b></p><br>
 <p align="center">
   <img src="https://img.shields.io/static/v1?label=%F0%9F%8C%9F&message=If%20Useful&style=style=flat&color=BC4E99" alt="Star Badge"/>
